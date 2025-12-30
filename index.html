@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" style="height: auto; min-height: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige Motors - Luxury Automotive Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Playfair Display', serif; }
+    </style>
+</head>
+<body class="bg-black text-white" style="height: auto; min-height: 100%;">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-black bg-opacity-90 backdrop-blur-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-2xl sm:text-3xl font-bold tracking-wider text-amber-400">PRESTIGE</div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-8 text-sm tracking-widest">
+                    <a href="#home" class="hover:text-amber-400 transition-colors duration-300">HOME</a>
+                    <a href="#collection" class="hover:text-amber-400 transition-colors duration-300">COLLECTION</a>
+                    <a href="#bespoke" class="hover:text-amber-400 transition-colors duration-300">BESPOKE</a>
+                    <a href="#heritage" class="hover:text-amber-400 transition-colors duration-300">HERITAGE</a>
+                    <a href="#contact" class="hover:text-amber-400 transition-colors duration-300">CONTACT</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="lg:hidden text-white" onclick="toggleMenu()">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-black bg-opacity-95 px-4 py-6 space-y-4">
+            <a href="#home" class="block text-sm tracking-widest hover:text-amber-400 transition-colors duration-300">HOME</a>
+            <a href="#collection" class="block text-sm tracking-widest hover:text-amber-400 transition-colors duration-300">COLLECTION</a>
+            <a href="#bespoke" class="block text-sm tracking-widest hover:text-amber-400 transition-colors duration-300">BESPOKE</a>
+            <a href="#heritage" class="block text-sm tracking-widest hover:text-amber-400 transition-colors duration-300">HERITAGE</a>
+            <a href="#contact" class="block text-sm tracking-widest hover:text-amber-400 transition-colors duration-300">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1563720360172-67b8f3dce741?w=1920&q=80');">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        </div>
+        
+        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8" data-aos="fade-up" data-aos-duration="1500">
+            <h1 class="text-4xl sm:text-6xl lg:text-8xl font-bold mb-6 tracking-wider">BEYOND LUXURY</h1>
+            <p class="text-lg sm:text-xl lg:text-2xl mb-8 tracking-widest text-gray-300 font-light">Craftsmanship Perfected</p>
+            <button class="bg-amber-400 text-black px-8 sm:px-12 py-3 sm:py-4 text-sm tracking-widest hover:bg-amber-500 transition-all duration-300 font-semibold">EXPLORE COLLECTION</button>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-2xl text-amber-400"></i>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section class="py-16 sm:py-24 lg:py-32 bg-zinc-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8">The Art of Perfection</h2>
+            <p class="text-base sm:text-lg lg:text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed font-light">Every vehicle we create is a masterpiece of engineering and design. Handcrafted with meticulous attention to detail, our automobiles represent the pinnacle of luxury and performance.</p>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection" class="py-16 sm:py-24 lg:py-32 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 sm:mb-16" data-aos="fade-up">Our Collection</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                <!-- Vehicle Card 1 -->
+                <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800&q=80" alt="Phantom Elite" class="w-full h-64 sm:h-80 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-2 tracking-wider">PHANTOM ELITE</h3>
+                    <p class="text-sm sm:text-base text-gray-400 mb-4 font-light">The epitome of luxury sedans</p>
+                    <a href="#" class="text-amber-400 text-sm tracking-widest hover:text-amber-500 transition-colors duration-300">DISCOVER MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Vehicle Card 2 -->
+                <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=80" alt="Ghost Supreme" class="w-full h-64 sm:h-80 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-2 tracking-wider">GHOST SUPREME</h3>
+                    <p class="text-sm sm:text-base text-gray-400 mb-4 font-light">Effortless power and grace</p>
+                    <a href="#" class="text-amber-400 text-sm tracking-widest hover:text-amber-500 transition-colors duration-300">DISCOVER MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+
+                <!-- Vehicle Card 3 -->
+                <div class="group cursor-pointer" data-aos="fade-up" data-aos-delay="300">
+                    <div class="relative overflow-hidden mb-6">
+                        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=800&q=80" alt="Wraith Prestige" class="w-full h-64 sm:h-80 object-cover transform group-hover:scale-110 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60"></div>
+                    </div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-2 tracking-wider">WRAITH PRESTIGE</h3>
+                    <p class="text-sm sm:text-base text-gray-400 mb-4 font-light">Dynamic luxury coupe</p>
+                    <a href="#" class="text-amber-400 text-sm tracking-widest hover:text-amber-500 transition-colors duration-300">DISCOVER MORE <i class="fas fa-arrow-right ml-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bespoke Section -->
+    <section id="bespoke" class="relative py-16 sm:py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1920&q=80');">
+            <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8">Bespoke Tailoring</h2>
+                    <p class="text-base sm:text-lg text-gray-300 mb-6 sm:mb-8 leading-relaxed font-light">Your vision, our craftsmanship. Our bespoke program allows you to create a truly unique automobile that reflects your personal style and preferences. From custom paint finishes to hand-stitched interiors, every detail is tailored to perfection.</p>
+                    <button class="border-2 border-amber-400 text-amber-400 px-8 sm:px-10 py-3 sm:py-4 text-sm tracking-widest hover:bg-amber-400 hover:text-black transition-all duration-300 font-semibold">START YOUR JOURNEY</button>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4 sm:gap-6" data-aos="fade-left">
+                    <div class="bg-zinc-900 bg-opacity-80 p-6 sm:p-8 text-center">
+                        <i class="fas fa-palette text-3xl sm:text-4xl text-amber-400 mb-4"></i>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Custom Colors</h3>
+                        <p class="text-xs sm:text-sm text-gray-400 font-light">Unlimited palette</p>
+                    </div>
+                    <div class="bg-zinc-900 bg-opacity-80 p-6 sm:p-8 text-center">
+                        <i class="fas fa-gem text-3xl sm:text-4xl text-amber-400 mb-4"></i>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Premium Materials</h3>
+                        <p class="text-xs sm:text-sm text-gray-400 font-light">Finest leathers</p>
+                    </div>
+                    <div class="bg-zinc-900 bg-opacity-80 p-6 sm:p-8 text-center">
+                        <i class="fas fa-cog text-3xl sm:text-4xl text-amber-400 mb-4"></i>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Personalization</h3>
+                        <p class="text-xs sm:text-sm text-gray-400 font-light">Every detail</p>
+                    </div>
+                    <div class="bg-zinc-900 bg-opacity-80 p-6 sm:p-8 text-center">
+                        <i class="fas fa-crown text-3xl sm:text-4xl text-amber-400 mb-4"></i>
+                        <h3 class="text-lg sm:text-xl font-bold mb-2">Exclusive Design</h3>
+                        <p class="text-xs sm:text-sm text-gray-400 font-light">One of a kind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section id="heritage" class="py-16 sm:py-24 lg:py-32 bg-zinc-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+                <div data-aos="fade-right">
+                    <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=800&q=80" alt="Heritage" class="w-full h-64 sm:h-96 object-cover">
+                </div>
+                
+                <div data-aos="fade-left">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8">A Legacy of Excellence</h2>
+                    <p class="text-base sm:text-lg text-gray-400 mb-6 leading-relaxed font-light">For over a century, we have been crafting the world's finest automobiles. Our heritage is built on innovation, craftsmanship, and an unwavering commitment to excellence.</p>
+                    <p class="text-base sm:text-lg text-gray-400 mb-6 sm:mb-8 leading-relaxed font-light">Each vehicle carries forward a tradition of perfection, combining timeless design with cutting-edge technology to create an unparalleled driving experience.</p>
+                    <div class="grid grid-cols-3 gap-4 sm:gap-8 text-center">
+                        <div>
+                            <div class="text-3xl sm:text-4xl lg:text-5xl font-bold text-amber-400 mb-2">100+</div>
+                            <div class="text-xs sm:text-sm text-gray-400 tracking-wider font-light">YEARS</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl sm:text-4xl lg:text-5xl font-bold text-amber-400 mb-2">50K+</div>
+                            <div class="text-xs sm:text-sm text-gray-400 tracking-wider font-light">VEHICLES</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl sm:text-4xl lg:text-5xl font-bold text-amber-400 mb-2">150+</div>
+                            <div class="text-xs sm:text-sm text-gray-400 tracking-wider font-light">COUNTRIES</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 sm:py-24 lg:py-32 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-12 sm:mb-16" data-aos="fade-up">Uncompromising Excellence</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hand-sparkles text-2xl sm:text-3xl text-black"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3 tracking-wider">HANDCRAFTED</h3>
+                    <p class="text-sm sm:text-base text-gray-400 font-light">Every detail meticulously crafted by master artisans</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bolt text-2xl sm:text-3xl text-black"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3 tracking-wider">PERFORMANCE</h3>
+                    <p class="text-sm sm:text-base text-gray-400 font-light">Unmatched power and effortless acceleration</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-2xl sm:text-3xl text-black"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3 tracking-wider">SAFETY</h3>
+                    <p class="text-sm sm:text-base text-gray-400 font-light">Advanced safety systems for complete peace of mind</p>
+                </div>
+
+                <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                    <div class="w-16 h-16 sm:w-20 sm:h-20 bg-amber-400 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-microchip text-2xl sm:text-3xl text-black"></i>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-bold mb-3 tracking-wider">TECHNOLOGY</h3>
+                    <p class="text-sm sm:text-base text-gray-400 font-light">Cutting-edge innovation seamlessly integrated</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-24 lg:py-32 bg-zinc-900">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8">Begin Your Journey</h2>
+            <p class="text-base sm:text-lg text-gray-400 mb-8 sm:mb-12 font-light">Experience the pinnacle of automotive luxury. Contact us to schedule a private consultation.</p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-12">
+                <div>
+                    <i class="fas fa-phone text-2xl sm:text-3xl text-amber-400 mb-4"></i>
+                    <p class="text-sm sm:text-base text-gray-400 font-light">+1 (555) 123-4567</p>
+                </div>
+                <div>
+                    <i class="fas fa-envelope text-2xl sm:text-3xl text-amber-400 mb-4"></i>
+                    <p class="text-sm sm:text-base text-gray-400 font-light">contact@prestige.com</p>
+                </div>
+                <div>
+                    <i class="fas fa-map-marker-alt text-2xl sm:text-3xl text-amber-400 mb-4"></i>
+                    <p class="text-sm sm:text-base text-gray-400 font-light">London, United Kingdom</p>
+                </div>
+            </div>
+
+            <button class="bg-amber-400 text-black px-10 sm:px-16 py-3 sm:py-4 text-sm tracking-widest hover:bg-amber-500 transition-all duration-300 font-semibold">REQUEST CONSULTATION</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8 sm:py-12 border-t border-zinc-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl sm:text-2xl font-bold mb-4 text-amber-400">PRESTIGE</h3>
+                    <p class="text-xs sm:text-sm text-gray-400 font-light">Crafting automotive excellence since 1920</p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold mb-4 tracking-wider">EXPLORE</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm text-gray-400 font-light">
+                        <li><a href="#" class="hover:text-amber-400 transition-colors duration-300">Collection</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition-colors duration-300">Bespoke</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition-colors duration-300">Heritage</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition-colors duration-300">News</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold mb-4 tracking-wider">SUPPORT</h4>
+                    <ul class="space-y-2 text-xs sm:text-sm text-gray-400 font-light">
+                        <li><a href="#" class="hover:text-amber-400 transition-colors duration-300">Contact</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition-colors duration-300">Showrooms</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition-colors duration-300">Service</a></li>
+                        <li><a href="#" class="hover:text-amber-400 transition-colors duration-300">Careers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-bold mb-4 tracking-wider">FOLLOW US</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors duration-300"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors duration-300"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors duration-300"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition-colors duration-300"><i class="fab fa-youtube text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-zinc-800 pt-8 text-center text-xs sm:text-sm text-gray-400 font-light">
+                <p>&copy; 2024 Prestige Motors. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        function toggleMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    document.getElementById('mobileMenu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('bg-opacity-95');
+            } else {
+                nav.classList.remove('bg-opacity-95');
+            }
+        });
+    </script>
+
+</body>
+</html>
